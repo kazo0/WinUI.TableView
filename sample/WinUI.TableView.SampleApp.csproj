@@ -18,9 +18,13 @@
     <ApplicationVersion>1</ApplicationVersion>
     <UnoFeatures>
       ThemeService;
-      <!-- SkiaRenderer; -->
+      SkiaRenderer;
     </UnoFeatures>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../src/WinUI.TableView.csproj" />
+  </ItemGroup>
 
   <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <ProjectCapability Include="Msix" />
@@ -41,11 +45,9 @@
   <ItemGroup>
     <PackageReference Include="ColorCode.WinUI" Version="2.0.15" Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'" />
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
-    <PackageReference Include="CommunityToolkit.WinUI.Controls.ColorPicker" Version="8.1.240916" />
-    <PackageReference Include="CommunityToolkit.WinUI.Controls.SettingsControls" Version="8.1.240916" />
+    <PackageReference Include="CommunityToolkit.WinUI.Controls.ColorPicker" Version="8.2.250402" />
+    <PackageReference Include="CommunityToolkit.WinUI.Controls.SettingsControls" Version="8.2.250402" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="../src/WinUI.TableView.csproj" />
-  </ItemGroup>
+
 </Project>

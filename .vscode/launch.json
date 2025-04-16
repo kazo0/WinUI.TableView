@@ -62,7 +62,7 @@
       "request": "launch",
       "preLaunchTask": "build-desktop",
       // If you have changed target frameworks, make sure to update the program path.
-      "program": "${workspaceFolder}/sample/bin/Debug/net9.0-desktop.dll",
+      "program": "${workspaceFolder}/sample/bin/Debug/net9.0-desktop/WinUI.TableView.SampleApp.dll",
       "args": [],
       "launchSettingsProfile": "WinUI.TableView.SampleApp (Desktop)",
       "env": {
